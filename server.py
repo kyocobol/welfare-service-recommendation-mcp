@@ -45,6 +45,8 @@ cohere_client = cohere.AsyncClientV2(timeout=10.0)
 
 @mcp.tool(
     description="""
+[복지니 - 나에게 필요한 복지서비스 찾기]
+
 사용자 조건에 맞는 중앙부처 및 지자체 복지서비스를 검색합니다.
 
 사용 조건
@@ -264,6 +266,8 @@ async def get_welfare_list(
 
 @mcp.tool(
     description="""
+[복지니 - 나에게 필요한 복지서비스 찾기]
+
 사용자 프로필과 복지서비스 후보를 비교해 관련도순으로 정렬합니다.
 
 사용 조건
@@ -399,6 +403,8 @@ async def rank_candidates(
 
 @mcp.tool(
     description="""
+[복지니 - 나에게 필요한 복지서비스 찾기]
+
 중앙부처 및 지자체 복지서비스의 상세 정보를 조회합니다.
 
 사용 조건
