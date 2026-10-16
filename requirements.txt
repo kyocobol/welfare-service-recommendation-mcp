@@ -1,0 +1,6 @@
+python-dotenv
+fastmcp
+pydantic
+httpx
+xmltodict
+cohere
