@@ -1,0 +1,20 @@
+[project]
+name = "welfare-service-recommendation-mcp"
+version = "0.1.0"
+description = "사용자 조건에 맞는 복지서비스를 추천하고 상세 정보를 제공하는 MCP 서버"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cohere>=7.2.0",
+    "fastmcp>=4.1.3",
+    "httpx>=0.28.1",
+    "pydantic>=2.14.1",
+    "xmltodict>=1.0.4",
+]
+
+[project.scripts]
+welfare-service-recommendation-mcp = "welfare_service_recommendation_mcp.server:main"
+
+[build-system]
+requires = ["uv_build>=0.8.22,<0.9.0"]
+build-backend = "uv_build"
