@@ -71,7 +71,7 @@ class WelfareClient:
         household_type: str | None = None,
         interest_theme: str | None = None,
         age: int | None = None,
-        page_size: int = 25,
+        page_size: int = 15,
         search_type: Literal["001", "002", "003"] = "003",
         order_by: Literal["popular", "date"] = "popular",
     ) -> list[NationalWelfare]:
